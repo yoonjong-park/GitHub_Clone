@@ -1,9 +1,22 @@
+/* 
+BEM
+CSS 작명 규칙
+- 일반적인 작명
+__ ~의 일부분  body__container   body의 일부분
+-- ~의 상태  
+*/
+
+
 /*COMMON*/
 .body__container {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #333;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*BTN*/
@@ -21,6 +34,7 @@
     cursor: pointer;
     box-sizing: border-box;
     position:relative;
+    color: #333;
   }
   
   .btn:hover::before {
@@ -62,3 +76,157 @@
 .input--text::-webkit-input-placeholder { color: #cacaca; }
 .input--text::-webkit-input-placeholder { color: #cacaca; }
 
+/* FLOAT CLEARFIX */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
+
+/* SUMMARY */
+.summary {
+
+}
+.summary__title {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+.summary__description {
+  font-size: 26px;
+  font-weight: 300;
+  color: #767676;
+  line-height: 1.5;
+}
+
+/* SECTION & INNER  */
+.section {
+  position: relative;
+}
+.section .inner {
+  max-width:980px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  border-bottom: 1px solid rgba(0,0,0,0.075);
+  box-shadow: 0 0 5px rgba(0,0,0,0.075);
+  background: #fff;
+}
+
+header .inner {
+  height: 78px;
+}
+
+header .menu-group {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+header .logo {
+  margin-right: 10px;
+}
+
+header .logo a {
+  background: url("../img/logo.svg");
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-indent: -9999px;  /* 대체텍스트 입력. 9999는 명시적인 약속*/
+}
+
+header .logo a:hover {
+  background: url("../img/logo_on.svg");
+}
+
+header .main-menu {
+  display: flex;
+}
+
+header .main-menu li a {
+  display: block;
+  padding: 10px;
+}
+
+header .main-menu li a:hover {
+  color: #4078c0;
+}
+
+header .sign-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .btn-group {
+  order: 2;
+  display: flex;
+}
+header .btn-group .sign-in{
+  margin-right: 4px;
+}
+#search-form {
+  order: 1;
+  margin-right: 10px;
+}
+#search {
+  width: 160px;
+  font-size: 14px;
+}
+#search + [type="submit"] {
+  display: none;
+}
+header .sub-menu {
+  display: flex;
+  margin-right: 10px;
+}
+header .sub-menu li a {
+  padding: 8px;
+  display: block;
+  font-size: 13px;
+  color: #3c4146;
+}
+header .sub-menu li a:hover {
+  color: #4078c0;
+}
+
+/* VISUAL */
+.section--visual {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100%;
+}
+.section--visual::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.3);
+}
+.section--visual .inner {
+  padding: 160px 0;
+}
+.section--visual .summary__title {
+  color: #FFF;
+  font-size: 54px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+               0 1px 25px rgba(0,0,0,0.75);
+}
+.section--visual .summary__description {
+  color: #FFF;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+               0 1px 25px rgba(0,0,0,0.75);
+}

@@ -158,6 +158,7 @@ header .main-menu {
 header .main-menu li a {
   display: block;
   padding: 10px;
+  color: #3c4146;
 }
 
 header .main-menu li a:hover {

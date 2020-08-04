@@ -114,7 +114,6 @@ a {
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
-  display: flex;
 }
 
 /* HEADER */
@@ -125,7 +124,9 @@ header {
 }
 
 header .inner {
+  max-width: 980px;
   height: 78px;
+  margin: 0 auto;
 }
 
 header .menu-group {
@@ -165,8 +166,8 @@ header .main-menu li a:hover {
 
 header .sign-group {
   display: flex;
-  align-items: center;
   height: 100%;
+  align-items: center;
 }
 header .btn-group {
   order: 2;
@@ -225,6 +226,7 @@ header .sub-menu li a:hover {
 }
 .section--visual .inner {
   padding: 160px 0;
+  display: flex;
 }
 .section--visual .summary__title {
   color: #FFF;
@@ -295,7 +297,7 @@ header .sub-menu li a:hover {
 }
 .section--feature .tiles {
   border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border-: 1px solid #e5e5e5;
 }
 .section--feature .tiles .inner {
   max-width: 1200px;

@@ -25,7 +25,7 @@ a {
     background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
     border: 1px solid #d5d5d5;
     border-radius: 4px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     padding: 0 12px;
     font-size: 14px;
@@ -201,13 +201,24 @@ header .sub-menu li a {
 header .sub-menu li a:hover {
   color: #4078c0;
 }
+#toggle-btn {
+  display: none;
+  background: url("../img/menu-toggle.svg");
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
 
 /* VISUAL */
 .section--visual {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: 100%;
+  background-size: cover;
 }
 .section--visual .summary {
   /* flex-grow: 1;

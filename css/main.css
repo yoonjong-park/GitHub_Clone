@@ -397,7 +397,7 @@ header .sub-menu li a:hover {
 
 /* FOOTER  */
 footer {
-
+/* 제어를 위해 가장 상위는 CSS 내용이 없어도 만들어둔다. */
 }
 footer .inner {
   padding: 50px 0;
